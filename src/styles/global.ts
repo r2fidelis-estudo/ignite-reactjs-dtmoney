@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     --tablet: 1080px;
     --mobile: 720px;
     --red: #E52E4D;
+    --green: #33CC95;
     --blue: #5429CC;
     --blue-light: #6933FF;
     --text-title: #363F5F;
@@ -20,17 +21,17 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    @media (max-width: --tablet) {
+    @media (max-width: var(--tablet)) {
       font-size: 93.75%;
     }
 
-    @media (max-width: --mobile) {
+    @media (max-width: var(--mobile)) {
       font-size: 87.5%;
     }
   }
 
   body {
-    background: --background;
+    background-color: var(--background);
     -webkit-font-smoothing: antialiased;
   }
 
